@@ -2,11 +2,13 @@
 
 # Create pem file
 
-$ cd /anyfolder/                                   ##name your key file as your wise
+$ cd /anyfolder/                                   
+##name your key file as your wise
 
 $ ssh-keygen -t rsa -b 2048
 
-$ openssl rsa -in foxutech -outform pem > foxutech.pem                                 ##foxutech is my keyfile name
+$ openssl rsa -in foxutech -outform pem > foxutech.pem                                 
+##foxutech is my keyfile name
 
 $ chmod 400 foxutech.pem
 
