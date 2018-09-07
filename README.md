@@ -18,10 +18,15 @@ $ terraform apply
 ## Ansible Time
 # Set Environment
 $ export ANSIBLE_HOSTS=/etc/ansible/ec2.py
+
 $export EC2_INI_PATH=/etc/ansible/ec2.ini
+
 Boto is must to install it, use 
+
 $ pip install boto3
+
 and add access key and secret key to ~/.boto file.
 
 # Run Playbook
+
 $ ansible-playbook -vvvv playbook.yml -e domain_name=anydomain.com -e letsencrypt_email=myemail@gmail.com
