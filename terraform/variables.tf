@@ -15,5 +15,5 @@ variable "key_path" {
  
 variable "bootstrap_path" {
   description = "Script to install Docker Engine"
-  default = "/root/prabhakar/deploy-nodeapp-on-aws-with-ansible-tf/docker.sh"
+  default = "./package.sh"
 }
