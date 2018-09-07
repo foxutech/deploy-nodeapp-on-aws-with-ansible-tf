@@ -1,9 +1,13 @@
 # Deploy webserver on AWS using Ansible and Terraform
 
 # Create pem file
+
 $ cd /anyfolder/   ##name your key file as your wise
+
 $ ssh-keygen -t rsa -b 2048
+
 $ openssl rsa -in foxutech -outform pem > foxutech.pem   ##foxutech is my keyfile name
+
 $ chmod 400 foxutech.pem
 
 ## Terraform Time
@@ -19,7 +23,7 @@ $ terraform apply
 # Set Environment
 $ export ANSIBLE_HOSTS=/etc/ansible/ec2.py
 
-$export EC2_INI_PATH=/etc/ansible/ec2.ini
+$ export EC2_INI_PATH=/etc/ansible/ec2.ini
 
 Boto is must to install it, use 
 
