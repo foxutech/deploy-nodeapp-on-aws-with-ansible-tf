@@ -10,10 +10,10 @@ variable "instance_type" {
  
 variable "key_path" {
   description = "SSH Public Key path"
-  default = "/home/core/.ssh/id_rsa.pub"
+  default = "/root/prabhakar/deploy-nodeapp-on-aws-with-ansible-tf/foxutech.pub"
 }
  
 variable "bootstrap_path" {
   description = "Script to install Docker Engine"
-  default = "install-docker.sh"
+  default = "/root/prabhakar/deploy-nodeapp-on-aws-with-ansible-tf/docker.sh"
 }
